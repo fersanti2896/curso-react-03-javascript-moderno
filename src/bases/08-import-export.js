@@ -17,9 +17,14 @@ const getHeroeById = (id) => {
     return heroes.find((hero) => hero.id === id);
 }
 
-console.log(getHeroeById(4));
+// console.log(getHeroeById(4));
 
 const getHeroeByOwner = (owner) => heroes.filter((hero) => hero.owner === owner);
 
-console.log(getHeroeByOwner('Marvel'));
-console.log(owners);
+// console.log(getHeroeByOwner('Marvel'));
+// console.log(owners);
+
+export {
+    getHeroeById,
+    getHeroeByOwner
+}
